@@ -17,3 +17,5 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
+
+- **More plots for easier interpretation**
