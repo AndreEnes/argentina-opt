@@ -10,7 +10,7 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 
 - **Output prediction**: after training the model, insert a .csv file containing the values of each feature. BALKBDAKSHBDSAHDBASD
 - **Feature optimization**: define each feature type (continuous or discrete) and its range (which can also be a fixed value) and train the model. Insert a .csv file containing the current values for each parameter, choose a target output and the program will find the best value for each parameter in order to get the closest output value to the target.
-- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html): the XGBRegressor model isn't easy to decode and is known as a *black box model* (REBER ESTA FRASE PARA VER SE NÃO ESTOU A INVENTAR). SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory  
+- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model* (REBER ESTA FRASE PARA VER SE NÃO ESTOU A INVENTAR). SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory  
 
 ## Example usage
 
