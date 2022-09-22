@@ -10,7 +10,7 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 
 - **Output prediction**: after training the model, insert a .csv file containing the values of each feature. BALKBDAKSHBDSAHDBASD
 - **Feature optimization**: define each feature type (continuous or discrete) and its range (which can also be a fixed value) and train the model. Insert a .csv file containing the current values for each parameter, choose a target output and the program will find the best value for each parameter in order to get the closest output value to the target.
-- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model* (REBER ESTA FRASE PARA VER SE NÃO ESTOU A INVENTAR). SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory  
+- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model* (REBER ESTA FRASE PARA VER SE NÃO ESTOU A INVENTAR). SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory.  
 
 ## Example usage
 
@@ -21,5 +21,5 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
-- **More plots for easier interpretation**
+- **More plots for easier interpretation**: [shapley values](https://en.wikipedia.org/wiki/Shapley_value) are not as [straightforward](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html#The-additive-nature-of-Shapley-values) as one might think. SHAP helps to show the correlations picked up by predictive ML models, which is not the same as causation, as detailed in [this](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/Be%20careful%20when%20interpreting%20predictive%20models%20in%20search%20of%20causal%C2%A0insights.html) overview in the SHAP documentation. 
 - **GPU support**
