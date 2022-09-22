@@ -30,6 +30,10 @@ The toolkit stores the trained model and several other features, such as which v
 
 #### Discrete variable optimization
 
+#### Model retraining
+
+#### Model parameter visualization
+
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
