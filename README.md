@@ -18,6 +18,12 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 
 ## Internal structure
 
+The main reason for so many different files is the way streamlit [works](https://docs.streamlit.io/library/get-started/multipage-apps). All functions related to ML are separate from the functions which relate to streamlit in order to be easier to migrate the functions to a different GUI.
+
+#### Non-code files
+
+The toolkit stores the trained model and several other features, such as which variables are discrete, the minimal increment of each and the original dataframe. To store these, 4 JSON files are created after defining the model's parameters for the first time. A time-saving measure was taken while writing the code and the program simply copies a template and fills it in with the model's parameters, that's why a *template.json* file is in the directory.
+
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
