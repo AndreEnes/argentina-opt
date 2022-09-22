@@ -24,6 +24,12 @@ The main reason for so many different files is the way streamlit [works](https:/
 
 The toolkit stores the trained model and several other features, such as which variables are discrete, the minimal increment of each and the original dataframe. To store these, 4 JSON files are created after defining the model's parameters for the first time. A time-saving measure was taken while writing the code and the program simply copies a template and fills it in with the model's parameters, that's why a *template.json* file is in the directory.
 
+#### XGBoost Regression
+
+#### Parameter optimization
+
+#### Discrete variable optimization
+
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
