@@ -34,6 +34,8 @@ The toolkit stores the trained model and several other features, such as which v
 
 #### Model parameter visualization
 
+#### Streamlit struggles
+
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
