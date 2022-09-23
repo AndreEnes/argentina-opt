@@ -26,6 +26,8 @@ The toolkit stores the trained model and several other features, such as which v
 
 #### XGBoost Regression
 
+The function used is [XGBRegressor](https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRegressor). Since this toolkit is meant to be used with generic regression problems, the model's hyperparameters are adjusted using [hyperopt](http://hyperopt.github.io/hyperopt/).
+
 #### Parameter optimization
 
 #### Discrete variable optimization
