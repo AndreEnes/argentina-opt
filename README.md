@@ -42,9 +42,11 @@ A more appropriate strategy for discrete variable optimization would be to use [
 
 #### Model retraining
 
-To achieve faster and possibly more accurate retraining, [incremental learning](https://en.wikipedia.org/wiki/Incremental_learning) is used. This method has already been implemented in [XGBRegressor](https://xgboost.readthedocs.io/en/latest/python/python_api.html#xgboost.XGBRegressor.fit) and is achieved by saving the ML model once it has been trained for a first time and while fitting the new data, it is only needed to pass the argument `xgb_model=` 
+To achieve faster and possibly more accurate retraining, [incremental learning](https://en.wikipedia.org/wiki/Incremental_learning) is used. This method has already been implemented in [XGBRegressor](https://xgboost.readthedocs.io/en/latest/python/python_api.html#xgboost.XGBRegressor.fit) and is achieved by saving the ML model once it has been trained for a first time and while fitting the new data, it is only needed to pass the argument `xgb_model=`, giving it the saved model (which in this toolkit is saved as a JSON file). 
 
 #### Model parameter visualization
+
+
 
 #### Streamlit struggles
 
