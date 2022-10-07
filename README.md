@@ -30,7 +30,7 @@ The function used is [XGBRegressor](https://xgboost.readthedocs.io/en/stable/pyt
 
 #### Parameter optimization
 
-Simulated annealing through SciPy's [dual_annealing](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html) is used to get the parameters values for which the ML model predicts the closest value to the target output. This optimization process takes into account boundaries for each variable, with those being either imposed by the user (as an interval or as a fixed value) or assumed to be the minimum and maximum values of the variable available in the dataset.
+Simulated annealing through [SciPy](https://docs.scipy.org/doc/scipy/index.html)'s [dual_annealing](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html) is used to get the parameters values for which the ML model predicts the closest value to the target output. This optimization process takes into account boundaries for each variable, with those being either imposed by the user (as an interval or as a fixed value) or assumed to be the minimum and maximum values of the variable available in the dataset.
 
 The [dual_annealing](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html) function has an argument called callback for which is possible to create a function that display each iteration of the algorithm to see how the variables converge. As this is not critical to the goal of this toolkit, it has not been implemented.
 
