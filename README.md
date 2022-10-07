@@ -46,7 +46,7 @@ To achieve faster and possibly more accurate retraining, [incremental learning](
 
 #### Model parameter visualization
 
-
+XGBoost is considered to be a black box model, in that the user has no overview of how each of the model's parameters affects the final result, given the model's high complexity. 
 
 #### Streamlit struggles
 
