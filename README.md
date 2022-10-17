@@ -10,7 +10,7 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 
 - **Output prediction**: after training the model, insert a .csv file containing the values of each feature. BALKBDAKSHBDSAHDBASD
 - **Feature optimization**: define each feature type (continuous or discrete) and its range (which can also be a fixed value) and train the model. Insert a .csv file containing the current values for each parameter, choose a target output and the program will find the best value for each parameter in order to get the closest output value to the target.
-- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model* (REBER ESTA FRASE PARA VER SE NÃO ESTOU A INVENTAR). SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory.  
+- **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model*. SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory.  
 
 ## Example usage
 
@@ -46,7 +46,7 @@ To achieve faster and possibly more accurate retraining, [incremental learning](
 
 #### Model parameter visualization
 
-XGBoost is considered to be a black box model, in that the user has no overview of how each of the model's parameters affects the final result, given the model's high complexity. 
+XGBoost is considered to be a black box model, in that the user has no overview of how each of the model's parameters affects the final result, given the model's high complexity. As mentioned previously, [SHAP](https://shap.readthedocs.io/en/latest/index.html) is used to help understand the importance of each feature to the model's output. At the time of writing, only a [beeswarm plot](https://shap.readthedocs.io/en/latest/example_notebooks/api_examples/plots/beeswarm.html) is implemented which is designed to display an information-dense summary of how the top features in a dataset impact the model’s output and is quite intuitive. However, caution is needed as SHAP helps to show the correlations picked up by predictive ML models, which is not the same as causation, as detailed in [this](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/Be%20careful%20when%20interpreting%20predictive%20models%20in%20search%20of%20causal%C2%A0insights.html) overview in the SHAP documentation
 
 #### Streamlit struggles
 
