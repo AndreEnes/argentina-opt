@@ -50,6 +50,8 @@ XGBoost is considered to be a black box model, in that the user has no overview 
 
 #### Streamlit struggles
 
+[Streamlit](https://streamlit.io/) is a Pyhton package intended to simplify building data apps. It's a great tool to make simple apps quickly, however, due to its simplicity, it has a few quirks. The most noteacible one in this toolkit is the fact it reruns the whole Python script if an action is performed, for example, a button press. So, how is it possible to save a variable after rerunning the script over and over? The answer is [*st.session_state*](https://docs.streamlit.io/library/api-reference/session-state), which is the way to store variables/states in between reruns for each user session. The state is preserved until the user reloads the app. This makes it so that sometimes it is necessary to press a button 2 times for the next inteded step to show, but please be aware that it does not affect the data analytics part of this toolkit as the most that could happen is to rerun an algorithm and having to wait for a few seconds while it finishes properly. 
+
 ## Possible improvements
 
 - **[Incremental learning](https://en.wikipedia.org/wiki/Incremental_learning):** Retraining the model without reusing the old data, which improves time efficiency
