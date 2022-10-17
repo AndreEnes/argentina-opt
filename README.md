@@ -12,7 +12,11 @@ The user interface was built using [streamlit](https://streamlit.io/), but the p
 - **Feature optimization**: define each feature type (continuous or discrete) and its range (which can also be a fixed value) and train the model. Insert a .csv file containing the current values for each parameter, choose a target output and the program will find the best value for each parameter in order to get the closest output value to the target.
 - **Model explanation using [SHAP](https://shap.readthedocs.io/en/latest/index.html)**: the XGBRegressor model isn't easy to decode and is known as a *black box model*. SHAP helps explain the importance of each feature to the model's output, using an approach relying on Game Theory.  
 
-## Example usage
+## Use cases
+
+This toolkit is built for [regression problems](https://en.wikipedia.org/wiki/Regression_analysis) using categorical data, with either continuous or discrete values. It is still possible to use nominal data, but each category must be attributed to a number and before training the model, this data must be described as *discrete* in the *Parameter Definition* tab of the app. The toolkit only functions with datasets that have had the possible specified modifications made and by being in a ***.csv*** file.
+
+This project was built using this [dataset COLOCAR AQUI O BLEACH CENAS]() which 
 
 ## Step-by-step guide
 
