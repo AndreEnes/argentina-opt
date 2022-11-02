@@ -73,7 +73,6 @@ def __XGBOOST_regression_train__(x_train, x_test, y_train, y_test, model_path='n
     else:
 
         model = xgb.XGBRegressor()
-        print('\n\n\model_path ahbshjsdbasjdasjbd--> ', model_path, '\n\n')
 
         evaluation = [(x_train, y_train), (x_test, y_test)]
 
