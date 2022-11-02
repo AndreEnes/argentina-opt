@@ -35,7 +35,9 @@ To install these packages run:
 To run the toolkit:
 - streamlit run 🔍_Initial_Page.py
 
-A new browser window should appear
+A new browser window should appear as shown. The menu bar contains sections to process your dataset. 
+![imagem](https://user-images.githubusercontent.com/78873306/199540588-ff62123e-918c-4d21-b2fa-0feefd723777.png)
+The *Initial Page* 
 
 ## Internal structure
 
