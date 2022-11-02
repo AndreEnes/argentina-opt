@@ -1,7 +1,5 @@
-from statistics import mode
-from tkinter.tix import Tree
 from sklearn.metrics import mean_squared_error
-from scipy.optimize import dual_annealing, minimize
+from scipy.optimize import dual_annealing
 
 import numpy as np
 import streamlit as st

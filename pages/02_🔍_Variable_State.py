@@ -1,5 +1,4 @@
 import streamlit as st
-from sklearn.model_selection import train_test_split
 from opt_model import __train_model__
 
 st.set_page_config(
