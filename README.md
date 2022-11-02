@@ -20,7 +20,7 @@ This project was built using this [dataset COLOCAR AQUI O BLEACH CENAS]() which
 
 ## Step-by-step guide
 
-The python packages required to run the toolkit are: [sklearn](https://scikit-learn.org/stable/), [SciPy](https://scipy.org/), [pandas](https://pandas.pydata.org), [numpy](https://numpy.org/), [streamlit](https://streamlit.io/), [matplotlib](https://matplotlib.org/), [SHAP](https://shap.readthedocs.io/en/latest/index.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/) and [Hyperopt](http://hyperopt.github.io/hyperopt/).
+The python packages required to run the toolkit are: [sklearn](https://scikit-learn.org/stable/), [SciPy](https://scipy.org/), [pandas](https://pandas.pydata.org), [NumPy](https://numpy.org/), [Streamlit](https://streamlit.io/), [matplotlib](https://matplotlib.org/), [SHAP](https://shap.readthedocs.io/en/latest/index.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/) and [Hyperopt](http://hyperopt.github.io/hyperopt/).
 
 To install these packages run:
 - pip install scikit-learn
@@ -31,6 +31,11 @@ To install these packages run:
 - pip install shap
 - pip install xgboost
 - pip install hyperopt
+
+To run the toolkit:
+- streamlit run 🔍_Initial_Page.py
+
+A new browser window should appear
 
 ## Internal structure
 
