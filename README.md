@@ -36,8 +36,33 @@ To run the toolkit:
 - streamlit run 🔍_Initial_Page.py
 
 A new browser window should appear as shown. The menu bar contains sections to process your dataset. 
-![imagem](https://user-images.githubusercontent.com/78873306/199540588-ff62123e-918c-4d21-b2fa-0feefd723777.png)
-The *Initial Page* 
+
+
+![imagem](https://user-images.githubusercontent.com/78873306/199541687-21cf3b7c-edea-42a6-ac50-891a70b73c8a.png)
+
+The *Initial Page* is where a directory for your project is selected. This directory will contain a few files needed for the toolkit to be able to be used with an existing project, meaning there's no need to select the specifications for the data after they have been chosen for the first time. Although the specifications can always be re-altered.
+
+![imagem](https://user-images.githubusercontent.com/78873306/199543381-ac58c772-58a9-413d-95f6-d2f1647bc795.png)
+
+The *Parameter Definition* page is for specifying the project's details, which include:
+- The output variable
+- The discrete variables and their minimal increment
+- The variables' ranges
+- The ratio between the training and testing data
+
+After these conditions have been set, the XGBoost model is set. Two different tables are displayed as shown in the following image:
+
+![imagem](https://user-images.githubusercontent.com/78873306/199546067-40c928e2-bea8-497a-bea5-f1ede79129e6.png)
+
+Three types of model error verification are available, being the [R2 Score](https://en.wikipedia.org/wiki/Coefficient_of_determination) (also known as Coefficient of determination), the [Mean Absolute Error](https://en.wikipedia.org/wiki/Mean_absolute_error) and the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Since this toolkit is for generic regression problems, different ways to verify the model's performance are needed to accomodate different types of problems. 
+
+![imagem](https://user-images.githubusercontent.com/78873306/199547666-871b3fac-8aa5-4bf3-9296-4b114eeffd19.png)
+
+The *Variable State* page displays tables containing information about the project, such as the selected options for the dataset's features and the model's error.
+
+![imagem](https://user-images.githubusercontent.com/78873306/199548542-614105bd-6694-4287-bc78-3a7ef0db3b39.png)
+
+The *Optimize Parameters* page takes a .csv file containing the features' values (without the output) and a target output and predicts the current output, gives a
 
 ## Internal structure
 
