@@ -20,6 +20,18 @@ This project was built using this [dataset COLOCAR AQUI O BLEACH CENAS]() which
 
 ## Step-by-step guide
 
+The python packages required to run the toolkit are: [sklearn](https://scikit-learn.org/stable/), [SciPy](https://scipy.org/), [pandas](https://pandas.pydata.org), [numpy](https://numpy.org/), [streamlit](https://streamlit.io/), [matplotlib](https://matplotlib.org/), [SHAP](https://shap.readthedocs.io/en/latest/index.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/) and [Hyperopt](http://hyperopt.github.io/hyperopt/).
+
+To install these packages run:
+- pip install scikit-learn
+- pip install scipy
+- pip install pandas
+- pip install numpy
+- pip install matplotlib
+- pip install shap
+- pip install xgboost
+- pip install hyperopt
+
 ## Internal structure
 
 The main reason for so many different files is the way streamlit [works](https://docs.streamlit.io/library/get-started/multipage-apps). All functions related to ML are separate from the functions which relate to streamlit in order to be easier to migrate the functions to a different GUI.
