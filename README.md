@@ -52,7 +52,7 @@ The *Parameter Definition* page is for specifying the project's details, which i
 
 After these conditions have been set, the XGBoost model is set. Two different tables are displayed as shown in the following image:
 
-![imagem](https://user-images.githubusercontent.com/78873306/199546067-40c928e2-bea8-497a-bea5-f1ede79129e6.png | width=100)
+<img src="https://user-images.githubusercontent.com/78873306/199546067-40c928e2-bea8-497a-bea5-f1ede79129e6.png" width="350">
 
 Three types of model error verification are available, being the [R2 Score](https://en.wikipedia.org/wiki/Coefficient_of_determination) (also known as Coefficient of determination), the [Mean Absolute Error](https://en.wikipedia.org/wiki/Mean_absolute_error) and the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Since this toolkit is for generic regression problems, different ways to verify the model's performance are needed to accomodate different types of problems. 
 
